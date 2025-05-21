@@ -45,4 +45,5 @@ header > div > div {
 .main-box{
   background-image: url("Programmer.jpg");
   background-size: cover;
+  color: #efdf54ef;
 }
