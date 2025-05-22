@@ -43,7 +43,7 @@ header > div > div {
   grid-template-rows: 70% 30%;
 }
 .main-box{
-  background-image: url("Programmer.jpg");
+  background-image: url("./images/Programmer.jpg");
   background-size: cover;
   color: #efdf54ef;
 }
