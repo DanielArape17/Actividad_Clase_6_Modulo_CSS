@@ -32,10 +32,15 @@ button {
   color: #0a0902ef;
   font-size: 20px;
   display: flex;
+  transition: all 0.5s ease-out;
 }
 
 button > img{
   height: 20px;
+}
+
+button:hover {
+  background-color: #efdf54ef;
 }
 
 /*Clases predeterminados*/
@@ -47,7 +52,7 @@ button > img{
   gap: 10px;
   text-align: center;
   height: 200px;
-  transition: all 0.5s ease-out;
+  transition: all 0.8s ease;
 }
 
 .box:hover {
