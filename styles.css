@@ -1,26 +1,105 @@
+/*Font Family*/
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Space+Grotesk:wght@300..700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Jersey 10";
 }
 
-main {
-  padding: 15px;
-  background-color: #231442;
+body{
+  background-color: #231442; 
+  color: #efdf54ef;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+a:visited, a:link {
+  text-decoration: none;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #B190D5;
+  color: #0a0902ef;
+  font-size: 20px;
+  display: flex;
+}
+
+button > img{
+  height: 20px;
+}
+
+/*Clases predeterminados*/
+.box {
+  border-color: #efdf54ef;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  gap: 10px;
+  text-align: center;
+  height: 200px;
+  transition: all 0.5s ease-out;
+}
+
+.box:hover {
+  border: none;
+  background-color: #efdf54ef;
+  color: #231442;
+}
+
+.centrar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*NAV*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: #53348f;
+  font-size: 25px;
+}
+
+nav > div {
+  display: flex;
+  gap: 20px;
+}
+
+nav div a:visited, nav div a:link {
+  color:#efdf54ef;
+  transition: all 0.8s ease;
+}
+
+.enlace:hover{
+  color: azure;
 }
 
 /*HEADER*/
 header {
   display: grid;
-  grid-template-columns: 15% 55% 15%;
+  grid-template-columns: 20% 60% 20%;
   justify-content: center;
   height: 90vh;
   gap: 10px;
+  margin: 30px;
 }
 
 header > div {
   display: grid;
   gap: 10px;
-
 }
 
 header > div > div {
@@ -45,5 +124,16 @@ header > div > div {
 .main-box{
   background-image: url("./images/Programmer.jpg");
   background-size: cover;
-  color: #efdf54ef;
+}
+
+/*SECTION Proyecto*/
+section{
+  height: 70vh;
+  padding: 25px;
+}
+
+.columna-grid-dos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 30px;
 }
