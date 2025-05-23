@@ -13,12 +13,14 @@
       <p>logo</p>
     </div>
     <div>
-      </a><a href="" class="enlace">
+      <a href="#Proyectos" class="enlace">
         <p>Proyectos</p>
-      </a><a href="" class="enlace">
-        <p>Habilidades</p>
-      </a><a href="" class="enlace">
+      </a>
+      <a href="#Educacación" class="enlace">
         <p>Educacación</p>
+      </a>
+        <a href="#Habilidades" class="enlace">
+        <p>Habilidades</p>
       </a>
     </div>
   </nav>
@@ -29,7 +31,7 @@
         <div>
           <p>Mi foto</p>
         </div>
-        <div style="background-image: url(./images/sobreMi.jpg); background-size:cover;">
+        <div class="image-sobre-mi">
           <p>
             Creativo, responsable y proactivo, transformo desafíos en soluciones 
             efectivas con pasión por la programación y el aprendizaje continuo.
@@ -52,12 +54,12 @@
         </div>
       </div>
       <div class="box-three">
-        <div style="background-image: url(./images/proyectos.jpg); background-size: cover;">
+        <div class="image-proyectos">
           <h3>Proyectos</h3>
           <h4>Pagina web de una pizzeria</h4>
           <a href="https://danielarape17.github.io/web-de-una-pizzeria/" target="_blank">Pizzeria</a>
         </div>
-        <div style="background-image: url(./images/educacion.jpg); background-size: cover;">
+        <div class="image-educacion">
           <h3>Estudios</h3>
           <h4>IUP "Santiago Mariño"</h4>
           <p>Estudiante cursando el 9 semestre</p>
@@ -65,12 +67,15 @@
       </div>
     </header>
     <!--Proyectos-->
-    <section>
+    <section id="Proyectos">
       <h2>Proyectos</h2>
       <div class="columna-grid-dos">
         <div class="box centrar">
-          <h2>Pizzera Website</h2>
-          <p>Contexto</p>
+            <h2>Pizzera Website</h2>
+            <p>Una Pagina Web con toda la informacion de una pizzera</p>
+            <a href="https://danielarape17.github.io/web-de-una-pizzeria/" target="_blank">
+              <button>Ir</button>
+            </a>
         </div>
         <div class="box centrar">
           <h2>Futuros Proyectos</h2>
@@ -78,12 +83,31 @@
         </div>
       </div>
     </section>
-    <section>
+    <!--Educacion-->
+    <section id="Educacación">
       <h2>Educacion</h2>
       <div class="box centrar">
         <h2>IUP "Santiago Mariño"</h4>
         <p>Estudiante cursando el 9 semestre</p>
         <p>Centrado en el desarrollo web y la ingeniería de software.</p>
+      </div>
+    </section>
+    <!--Habilidades-->
+    <section id="Habilidades">
+      <h2>Habilidades</h2>
+      <div class="columna-grid-tres">
+        <div class="box centrar">
+          <h2>HTML</h2>
+          <img src="https://img.icons8.com/?size=100&id=11240&format=png&color=000000" alt="HTML Icon">
+        </div>
+        <div class="box centrar">
+          <h2>CSS</h2>
+          <img src="https://img.icons8.com/?size=100&id=ouFhH3biTwwx&format=png&color=000000" alt="CSS Icon">
+        </div>
+        <div class="box centrar">
+          <h2>C++</h2>
+          <img src="https://img.icons8.com/?size=100&id=44328&format=png&color=000000" alt="C++ Icon">
+        </div>
       </div>
     </section>
   </main>

@@ -45,9 +45,7 @@ button:hover {
 
 /*Clases predeterminados*/
 .box {
-  border-color: #efdf54ef;
-  border-style: solid;
-  border-width: 2px;
+  border: #efdf54ef 2px solid;
   border-radius: 10px;
   gap: 10px;
   text-align: center;
@@ -55,10 +53,26 @@ button:hover {
   transition: all 0.8s ease;
 }
 
+.box  button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #efdf54ef;
+  color: #231442;
+}
+
 .box:hover {
   border: none;
   background-color: #efdf54ef;
   color: #231442;
+}
+
+.box:hover  button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #231442 ;
+  color: #efdf54ef;
 }
 
 .centrar {
@@ -126,8 +140,26 @@ header > div > div {
 .box-three {
   grid-template-rows: 70% 30%;
 }
-.main-box{
+
+.main-box {
   background-image: url("./images/Programmer.jpg");
+  background-size: cover;
+  border-radius: 15px;
+}
+
+/*Imagenes de Fondo*/
+.image-sobre-mi {
+  background-image: url(./images/sobreMi.jpg); 
+  background-size:cover;
+}
+
+.image-proyectos {
+  background-image: url(./images/proyectos.jpg); 
+  background-size: cover;
+}
+
+.image-educacion {
+  background-image: url(./images/educacion.jpg); 
   background-size: cover;
 }
 
@@ -140,5 +172,11 @@ section{
 .columna-grid-dos {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
+  gap: 30px;
+}
+
+.columna-grid-tres {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
 }
