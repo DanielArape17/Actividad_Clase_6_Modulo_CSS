@@ -49,26 +49,12 @@ button:hover {
 
 /*Clases predeterminados*/
 .box {
-  position: relative;
-  border: none;
+  border: #efdf54ef 2px solid;
   border-radius: 10px;
   gap: 10px;
   text-align: center;
   height: 200px;
   transition: all 0.8s ease;
-  color: #efdf54ef;
-}
-
-.box::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 2px solid #efdf54ef;
-  border-radius: 10px;
-  animation: movimiento-borde 8s linear infinite;
 }
 
 .box  button {
@@ -105,7 +91,7 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 25px;
   background-color: #53348f;
   font-size: 25px;
 }
@@ -147,8 +133,6 @@ header > div > div {
   padding: 10px;
   background-color: #B190D5;
   border-radius: 15px;
-  background-size: 180% 180%;
-  animation: gradient-animation 15s ease infinite;
 }
 
 .box-one {
@@ -186,31 +170,21 @@ header > div > div {
   transition: all 1s ease;
 }
 
-.image-contacto {
-  background-image: url(./images/contacto.jpg); 
-  background-size: cover;
-  transition: all 1s ease;
-}
-
-.image-educacion:hover, .image-proyectos:hover, .image-sobre-mi:hover, .image-contacto:hover{
+.image-educacion:hover, .image-proyectos:hover, .image-sobre-mi:hover {
   background-image: none;
-  background: linear-gradient(103deg,#f9a3cb,#9982d1,#663892);
-  background-size: 180% 180%;
-  animation: gradient-animation 8s ease infinite;
 }
 
 .letras-secciones {
   opacity: 0;
 }
 
-.image-educacion:hover .letras-secciones, .image-proyectos:hover 
-.letras-secciones, .image-sobre-mi:hover .letras-secciones, .image-contacto:hover .letras-secciones{
+.image-educacion:hover .letras-secciones, .image-proyectos:hover .letras-secciones, .image-sobre-mi:hover .letras-secciones{
   opacity: 1;
 }
 
 /*SECTION Proyecto*/
 section{
-  height: 50vh;
+  height: 70vh;
   padding: 25px;
 }
 
@@ -230,46 +204,4 @@ section{
 /*FOOTER*/
 footer {
   padding: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: #efdf54ef 2px solid;
-  border-bottom: #efdf54ef 2px solid;
-  background-color: #53348f;
-}
-
-/*AMINACION*/
-
-.border-animation {
-  border: #efdf54ef 3px solid;
-}
-
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes movimiento-borde {
-  0% {
-    clip-path: inset(0 100% 0% 0);
-  }
-  25% {
-    clip-path: inset(0 0 100% 0);
-  }
-  50% {
-    clip-path: inset(0 0 0 100%);
-  }
-  75% {
-    clip-path: inset(100% 0 0 0);
-  }
-  100% {
-    clip-path: inset(0 100% 0 0);
-  }
 }
